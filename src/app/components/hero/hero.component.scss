@@ -31,6 +31,33 @@
     }
 }
 
-// .hero-content {
+@media screen and (min-width: 480px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        padding: 2rem;
+        .hero-content {
+            padding: 10px;
+            display: block;
+            button {
+                padding: 10px 15px;
+                font-weight: 600;
+                margin-top: 5px;
+            }
+         
+        }
 
-// }
+        img {
+            border-radius: 8px;
+        }
+   
+
+      
+    }
+
+}
+
+

@@ -4,3 +4,11 @@
     padding: 1rem;
     gap: 1rem;
 }
+
+
+@media screen and (min-width: 480px) {
+    .cars-container {
+      padding: 2.5rem;
+    }
+    
+}
