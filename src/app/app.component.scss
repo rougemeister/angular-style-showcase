@@ -9,6 +9,18 @@
 @media screen and (min-width: 480px) {
     .cars-container {
       padding: 2.5rem;
+      gap: 2.5rem;
     }
     
+}
+
+
+@media screen and (min-width: 840px) {
+    .cars-container {
+        margin: auto;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+      }
 }

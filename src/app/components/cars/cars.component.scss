@@ -32,3 +32,12 @@
         box-shadow: 0 0 5px rgba(235, 228, 228, 0.2);
     }
 }
+
+
+@media screen and (min-width: 840px) {
+    .item {
+        width: 350px;
+        height: 420px;
+    }
+    
+}

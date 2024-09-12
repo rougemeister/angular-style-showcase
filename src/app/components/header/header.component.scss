@@ -10,6 +10,12 @@
     color: var(--text-color);
     box-shadow: 0 2px 4px var(--accent-color);
     transition: all 0.3s ease;
+
+    svg {
+        width: 45px;
+        height: 45px;
+        fill: var(--primary-color);
+    }
     .logo{
      width: 100px;
      padding: 10px;
