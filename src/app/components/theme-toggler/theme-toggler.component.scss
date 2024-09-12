@@ -1,23 +1,15 @@
-@import '../../../styles.scss';
+// @import '../../../styles.scss';
 
 
-:host {
   .toggle-container {
     width: 100px;
     height: 60px;
     position: relative;
-    background: var(--bg-color); // Using global surface color
+    background: transparent; // Using global surface color
 
     transition: background-color 0.5s;
 
     // Transition based on light/dark theme
-    .light & {
-      background: var(--bg-color); // Light theme surface color
-    }
-
-    .dark & {
-      background: var(--bg-color); // Dark theme surface color
-    }
   }
 
   label {
@@ -25,19 +17,12 @@
     height: 24px;
     position: relative;
     display: block;
-    background-color: var(--accent-color); // Global accent color
+    background-color: var(--primary-color); // Global accent color
     border-radius: 200px;
     margin: 0 auto;
     transition: background-color 0.3s, left 0.3s;
     cursor: pointer;
 
-    .light & {
-      background-color: var(--secondary-color); // Accent color in light theme
-    }
-
-    .dark & {
-      background-color: var(--secondary-color); // Accent color in dark theme
-    }
 
     &::after {
       content: "";
@@ -46,17 +31,10 @@
       position: absolute;
       top: 5.5px;
       left: 4px;
-      background: var(--primary-color); // Global surface color for toggle knob
+      background: var(--heading-color); // Global surface color for toggle knob
       border-radius: 100px;
       transition: left 0.5s, background-color 0.5s;
 
-      .light & {
-        background-color: var(--accent-color); // Light theme surface color
-      }
-
-      .dark & {
-        background-color: var(--primary-color); // Dark theme surface color
-      }
     }
   }
 
@@ -78,52 +56,24 @@
 
     &.sun {
       left: 80px;
-      fill: var(--primary-color); // Use accent color from global
+      fill: var(--heading-color); // Use surface color from global
 
-      .light & {
-        fill: var(--primary-color); // Light theme accent color
-      }
-
-      .dark & {
-        fill: var(--primary-color); // Dark theme surface color for sun
-      }
     }
 
     &.moon {
       left: 1px;
-      fill: var(--primary-color); // Use surface color from global
+      fill: var(--heading-color); // Use surface color from global
 
-      .light & {
-        fill: var(--secondary-color); // Light theme surface color
-      }
-
-      .dark & {
-        fill: var(--primary-color); // Dark theme accent color for moon
-      }
     }
   }
 
   input:checked ~ svg.sun {
-    fill: var(--primary-color); // Switch sun color when checked
-
-    .light & {
-      fill: var(--primary-color); // Light theme switch
-    }
-
-    .dark & {
-      fill: var(--primary-color); // Dark theme switch
-    }
+    fill: var(--heading-color); // Switch sun color when checked
   }
 
   input:checked ~ svg.moon {
-    fill: var(--accent-color); // Switch moon color when checked
+    fill: var(--heading-color); // Switch moon color when checked
 
-    .light & {
-      fill: var(--accent-color); // Light theme switch
-    }
-
-    .dark & {
-      fill: var(--secondary-color); // Dark theme switch
-    }
+    
   }
-}
+

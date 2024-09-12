@@ -1,0 +1,12 @@
+<div class="item" [style.boxShadow]="getBoxShadow(cars.color)">
+    <div class="image">
+        <img src="../../../assets/data/cars/{{cars.filePath}}" alt="{{cars.make}}">
+    </div>
+    <div class="content">
+        <h3 class="make">{{cars.make}}</h3>
+        <p class="model">{{cars.model}}</p>
+        <p class="description">{{cars.description}}</p>
+        <div class="color" [style.backgroundColor]="cars.color" ></div>
+    </div>
+   
+</div>
