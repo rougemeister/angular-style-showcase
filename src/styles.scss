@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/themes/theme-variables.scss';
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+  &.light {
+    --bg-color: #{$light-bg};
+    --text-color: #{$light-text};
+    --primary-color: #{$light-primary};
+    --secondary-color: #{$light-secondary};
+    --accent-color: #{$light-accent};
+    --error-color: #{$light-error};
+    --surface-color: #{$light-surface};
+  }
+
+  &.dark {
+    --bg-color: #{$dark-bg};
+    --text-color: #{$dark-text};
+    --primary-color: #{$dark-primary};
+    --secondary-color: #{$dark-secondary};
+    --accent-dark-color: #{$dark-accent};
+    --error-color: #{$dark-error};
+    --surface-color: #{$dark-surface};
+  }
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
