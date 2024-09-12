@@ -1,1 +1,11 @@
-<app-theme-toggler/>
+<app-header/>
+<app-hero/>
+
+
+<div class="cars-container">
+@for(car of cars; track $index){
+    <app-cars [cars]="car"/>
+}
+   
+<app-footer/>
+</div>

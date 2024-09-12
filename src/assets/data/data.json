@@ -1,0 +1,31 @@
+
+[
+     {
+        "make": "Lamborghini",
+        "model": "Aventador",
+        "color": "#fca311",
+        "description": "A stunning yellow Lamborghini Aventador with sleek, sharp lines and a powerful stance.",
+        "filePath": "yellow-lamb.jpg"
+      },
+      {
+        "make": "Aston Martin",
+        "model": "Convertible",
+        "color": "#FFFFFF",
+        "description": "A stylish white Aston Martin convertible with an open-top design, perfect for a luxurious drive.",
+        "filePath": "white-opentop.jpg"
+      },
+      {
+        "make": "Audi",
+        "model": "RS7 Sportback",
+        "color": "#C0C0C0",
+        "description": "A sleek silver Audi RS7 Sportback with a bold front grill and dynamic curves.",
+        "filePath": "silver-audi.jpg"
+      },
+      {
+        "make": "Acura",
+        "model": "NSX",
+        "color": "#FF4500",
+        "description": "A vibrant orange Acura NSX with an aggressive, sporty look and high-performance features.",
+        "filePath": "orange-lamb.jpg"
+      }
+ ]
